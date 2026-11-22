@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+app:
+  seed-demo-data: true
+
+booking:
+  hold-duration: PT15M          # how long an unpaid booking holds inventory
+  expiry-sweep-interval: PT30S  # how often lapsed holds are released
+
+pricing:
+  weekend-surcharge-percent: 20
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
